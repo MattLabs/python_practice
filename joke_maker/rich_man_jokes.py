@@ -32,8 +32,7 @@ Testing: Simple run test
 print ("hello, I'm a joke-maker, what's your name?")
 
 #2 Take input from keyboard until enter is pressed [save as "NAME"]
-name = input ("Press Enter to continue: " + '\n')
-
+name = raw_input("Press Enter to continue: " + '\n')
 
 #3  Print "Hello" + name + ". Here is your list of customized Jokes: " 
 print ('\n')
@@ -44,9 +43,9 @@ print ("Hello " + name + ". Here is your list of customized jokes: " + '\n')
 j = joke1.read()
 print (j)"""
 
-for line in open('joke1.txt'):
-    print(line + '\n')
-    break
+#for line in open('joke1.txt'):
+#    print(line + '\n')
+#    break
     
 """joke1 = 'joke1.txt'
 with open(joke1) as f:
@@ -81,9 +80,9 @@ for line in f:
     a.append(line)
     print(line + '\n')"""
 
-i = 2
+i = 1
 while i < 4:
-    filename = r'C:\Users\mtebi\OneDrive\Documents\Python\joke%d.txt' % i
+    filename = r'./joke%d.txt' % i
     with open(filename, 'r') as f:
         print('Here is another joke: ' + name)
         print(f.read() + '\n')
